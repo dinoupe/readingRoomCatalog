@@ -7,7 +7,7 @@ $menu_bar;
 if (empty($_SESSION) || ($_SESSION['type']!=='Admin' )){
   $menu_bar='<div class="row">
   <div class="col-md-10 col-md-offset-1 ptitle">
-  <h1><abbr title="Alexandru Ioan Cuza University">UAIC</abbr> Reading Room and English Department Online Catalog</h1>
+  <h1>Online Catalog</h1>
 </div></div>
 <div class="row pmenu">
   <div class="dropdown col-md-2 col-md-offset-2">
@@ -30,7 +30,7 @@ if (empty($_SESSION) || ($_SESSION['type']!=='Admin' )){
 else{
   $menu_bar='<div class="row">
   <div class="col-md-10 col-md-offset-1 ptitle">
-    <h1><abbr title="Alexandru Ioan Cuza University">UAIC</abbr> Reading Room and English Department Online Catalog</h1>
+    <h1>Online Catalog</h1>
 </div></div>
 <div class="row pmenu">
   <div class="dropdown col-md-2 col-md-offset-2">
