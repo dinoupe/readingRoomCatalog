@@ -1,0 +1,20 @@
+$(document).ready(function(){
+  $('#breport').click(function(){
+    bsdate=$('#bstartdate').val();
+    bedate=$('#benddate').val();
+    $.get("php/loanreports.php",{bsd:bsdate,bed:bedate},function(data,status){
+      $('#showbrep').html(data);
+      $('#showarep').hide();
+      $('#showbrep').show();
+    },'text')
+  });
+  $('#areport').click(function(){
+    bsdate=$('#bstartdate').val();
+    bedate=$('#benddate').val();
+    $.get("php/authorreports.php",{bsd:bsdate,bed:bedate},function(data,status){
+      $('#showarep').html(data);
+      $('#showbrep').hide();
+      $('#showarep').show();      
+    })
+  });
+})
