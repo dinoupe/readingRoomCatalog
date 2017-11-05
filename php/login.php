@@ -2,10 +2,7 @@
 
 session_start();
 
-$con = mysqli_connect('localhost','id2988454_readingtester','reading!234','id2988454_rr_test');
-if(!$con){
-  die('Could not connect: ' . mysqli_error($con));
-}
+require_once 'dbcon_u.php';
 
 $id = $_POST['uid'];
 $pwd = $_POST['upwd'];
