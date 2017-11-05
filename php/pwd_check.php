@@ -1,10 +1,11 @@
 <?php
 
 require_once('dbcon_u.php');
+session_start();
 
 $oldpwd = $_GET['oldpwd'];
 
-$sql = 'select pwd from `users` where `id` = '.$_SESSION['uid'];
+$sql = 'select pwd from `users` where `id`='.$_SESSION['uid'];
 
 $result= mysqli_query($con,$sql);
 

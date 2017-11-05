@@ -45,6 +45,7 @@ $(document).ready(function(){
     width : 400,
     buttons: {
       "Login": login,
+      "Forgot password":function(){window.location.href='show_forgotpwd.php'},
       Cancel: function(){dialog.dialog("close");}
     }
   });

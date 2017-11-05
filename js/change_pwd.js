@@ -7,7 +7,10 @@ $(document).ready(function(){
       $.get('php/pwd_check.php', {oldpwd:old_pwd}, function(data){
         if(data == 'true'){
           $.post('php/pwd_change.php', {newpwd:new_pwd}, function(data){
-            alert(data);            
+            alert(data);
+            if (data = 'Password changed successfully'){
+              window.location.href='php/session_end.php';
+            }            
           }, 'text');
         }
         else{
